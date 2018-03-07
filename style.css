@@ -1,0 +1,59 @@
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#grid {
+	display: grid;
+	grid-template:
+		"a b1 c"
+		"a b2 c"
+		"a b3 c"
+		"a b4 c"
+		"a b5 c"
+}
+
+#frugter {
+	grid-area: a
+}
+
+#durianBesk {
+	grid-area: b1;
+	height: 5em;
+}
+
+#hmelonBesk {
+	grid-area: b2;
+	height: 5em;	
+}
+
+#jackfrugtBesk {
+	grid-area: b3;
+	height: 5em;	
+}
+
+#kmelonBesk {
+	grid-area: b4;
+	height: 5em;	
+}
+
+#greaskerBesk {
+	grid-area: b5;
+	height: 5em;	
+}
+
+#oversigt {
+	grid-area: c;
+	border-left-style: solid;
+	border-radius: 1px;
+	padding-left: 1em;
+}
+
+#grid img {
+	height: 10em;
+	cursor: pointer;
+	display: block;
+	margin-left: 15vw;
+	margin-right: 1em;
+}

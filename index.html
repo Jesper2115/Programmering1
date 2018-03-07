@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>FrugtAway</title>
+	<link rel="stylesheet" href="style.css">
+
+	
+</head>
+
+<body>
+	<img src="logo.png" alt="logo" id="logo">
+	<div id="grid">
+		<div id="frugter"> <!-- Denne div indeholder billeder, som har en onclick, som refererer til en function -->
+			<div><img src="durian.jpg" alt="Durian" id="durian" onclick="add('durian')"></div>
+			
+			<div><img src="horned%20melon.jpg" alt="Hornet melon" id="hmelon" onclick="add('hmelon')"></div>
+				
+			<div><img src="jackfruit.jpg" alt="Jackfrugt" id="jackfrugt" onclick="add('jackfrugt')"></div>
+					
+			<div><img src="korean%20melon.jpg" alt="Koreansk melon" id="kmelon" onclick="add('kmelon')"></div>
+			
+			<div><img src="pumpkin.jpg" alt="Græskar" id="graeskar" onclick="add('graeskar')"></div>
+		</div>
+		<!-- Her starter beskrivelserne af frugterne -->
+		<div id="durianBesk"><h2>Durian</h2>
+		<p>Durian er frugt der gror i Sydøstasien. Den har en gennemtrængende lugt, og smagen er sødlig og fad. Durian omtales også som "frugternes konge".</p></div>
+		<div id="hmelonBesk"><h2>Hornet melon</h2>
+		<p>Kiwano, også kendt som hornet melon, er oval og har tykke pigge. Den har geléagtig kød med spiselige kerner.</p></div>
+		<div id="jackfrugtBesk"><h2>Jackfrugt</h2>
+		<p>Jackfugt er en stor frugt, der stammer fra regnskovene i Malaysia og Indien. Frugten er oval og har en tornet, kraftig skal, der går fra grønt til brunt, når den er moden. </p></div>
+		<div id="kmelonBesk"><h2>Koreansk melon</h2>
+		<p>Koreansk melon er en form for melon primært fundet i Korea. Den har hvidt kød og er saftig og sød.</p></div>
+		<div id="graeskerBesk"><h2>Græskar</h2>
+		<p>Græskar er en frugt, som oprindeligt stammer fra det tropiske og subtropiske Amerika. Den kan anvendes i en lang række retter.</p></div>
+
+		<div id="oversigt">
+		<!-- Her findes oversigten over antal og pris for de individuelle frugter, samt det samlede antal og pris. -->
+			<h2>Pris</h2>
+			<p><span id="durianAntal">0</span> x Durian - <span id="durianPris">0</span>kr.</p>
+			<p><span id="hmelonAntal">0</span> x Hornet melon - <span id="hmelonPris">0</span>kr.</p>
+			<p><span id="jackfrugtAntal">0</span> x Jackfrugt - <span id="jackfrugtPris">0</span>kr.</p>
+			<p><span id="kmelonAntal">0</span> x Koreansk melon - <span id="kmelonPris">0</span>kr.</p>
+			<p><span id="graeskarAntal">0</span> x Græskar - <span id="graeskarPris">0</span>kr.</p>
+			<br>
+			<p>Antal: <span id="antal">0</span> stk.</p>
+			<p>Pris: <span id="pris">0</span>kr.</p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
+<script src="script.js"></script> <!-- Dette tag refererer til javascript-filen -->
